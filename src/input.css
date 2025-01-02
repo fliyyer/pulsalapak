@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Alexandria', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.bg-gradient-text {
+    background: linear-gradient(180deg, #F24E1E 0%, #A559F7 96.35%, #A259FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-hero-info {
+    padding: 20px;
+    border-radius: 27px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+    max-width: 383px;
+    min-width: 350px;
+    z-index: 10;
+  }
+
+  .card-pl-info {
+    padding: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+  }
+
+.content-feature {
+    padding: 20px;
+    border-radius: 27px;
+    border: 0.2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.bg-button {
+    border-radius: 27px;
+    background: linear-gradient(109deg, #D2537A 1.57%, #ED4F2D 100%);
+    backdrop-filter: blur(25px);
+}
+
+.card-testimonial {
+    width: 384px;
+    border-radius: 27px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.content-unduh {
+    border-radius: 27px;
+    border: 2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+}
+
+.bg-gradient-card {
+    border-radius: 27px 27px 0px 0px;
+    border-top: 2px solid rgba(255, 255, 255, 0.80);
+    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
+    backdrop-filter: blur(25px);
+}
