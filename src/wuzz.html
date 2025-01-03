@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wuzz</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- font montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+    </style>
+
+    <main class="flex w-full flex-col min-h-screen bg-[#501718] relative">
+      <!-- navbar -->
+      <nav class="flex flex-row py-3 w-full">
+        <div
+          class="flex w-full max-w-7xl mx-auto items-center justify-between flex-row"
+        >
+          <div class="h-[95px] w-[320px]">
+            <img src="/public/wuzz.png" alt="Wuzz" />
+          </div>
+          <ul
+            class="flex text-white uppercase gap-10 flex-row text-xs items-center font-bold"
+          >
+            <li class="cursor-pointer hover:text-gray-400">About</li>
+            <li class="cursor-pointer hover:text-gray-400">Services</li>
+            <li class="cursor-pointer hover:text-gray-400">Product</li>
+            <button
+              class="rounded-[40px] uppercase border-2 border-[#fff] px-10 py-3"
+            >
+              Contact Us
+            </button>
+            <button
+              class="rounded-[40px] text-[#343045] uppercase px-10 py-3"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Join Hydra
+            </button>
+          </ul>
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+      <!-- hero section -->
+      <section class="relative flex items-center w-full mt-20 mx-auto mb-28">
+        <img
+          src="/public/Ellipse-hero.png"
+          alt="Eclipse"
+          class="absolute right-0"
+        />
+        <img
+          src="/public/vector-wuzz.png"
+          alt="vector"
+          class="absolute right-0"
+        />
+        <div class="w-full flex max-w-7xl mx-auto relative">
+          <div class="w-1/2 flex flex-col">
+            <h1 class="text-[46px] text-white font-bold">
+              <span class="text-gradient-wuzz">Distributor</span> Pulsa H2H
+            </h1>
+            <p class="text-white text-[46px] font-bold">
+              Terbaik
+              <span class="text-gradient-wuzz">untuk Kebutuhan Anda!</span>
+            </p>
+            <span class="text-white text-2xl"
+              >solusi terbaik untuk bisnis pulsa Anda</span
+            >
+            <button
+              class="w-[214px] py-3 px-7 mt-7 rounded-[40px] text-[#343045] font-bold"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Gabung Sekarang
+            </button>
+          </div>
+          <div class="w-1/2 flex justify-end">
+            <div class="cover-hero-wuzz">
+              <img
+                src="/public/hero-wuzz.png"
+                alt="Wuzz"
+                class="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero section -->
+
+      <!-- feature section -->
+      <section class="flex w-full max-w-7xl mx-auto pb-28">
+        <div
+          class="content-feature w-full shadow-[23px_27px_0px_-3px_rgba(115,_98,_98,_1)]"
+        >
+          <h1
+            class="uppercase text-white text-center leading-[48px] font-extrabold text-[40px]"
+          >
+            Kenapa memilih Kami?
+          </h1>
+          <div class="grid grid-cols-5 mt-6 gap-1 items-start">
+            <div class="flex items-start gap-2">
+              <img
+                src="/public/feature6.png"
+                alt="Mudah Digunakan"
+                class="w-24"
+              />
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-white leading-6 font-semibold tracking-[0.48px] capitalize"
+                >
+                  jaringan Luas
+                </p>
+                <p
+                  class="text-white font-light text-xs tracking-[0.32px] capitalize"
+                >
+                  Melayani pelanggan di seluruh Indonesia dengan jaringan
+                  terpercaya.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img
+                src="/public/feature3.png"
+                alt="Produk Lengkap"
+                class="w-20"
+              />
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-white font-bold leading-6 tracking-[0.48px] capitalize"
+                >
+                  Produk Lengkap
+                </p>
+                <p
+                  class="text-white font-light text-xs tracking-[0.32px] capitalize"
+                >
+                  Pulsa, paket data, dan layanan PPOB dari semua operator
+                  tersedia.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img
+                src="/public/feature2.png"
+                alt="Produk Lengkap"
+                class="w-20"
+              />
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-white font-bold leading-6 tracking-[0.48px] capitalize"
+                >
+                  Harga Bersaing
+                </p>
+                <p
+                  class="text-white font-light text-xs tracking-[0.32px] capitalize"
+                >
+                  Harga terbaik untuk keuntungan maksimal Anda.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img
+                src="/public/feature7.png"
+                alt="Keamanan Terjamin"
+                class="w-20"
+              />
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-white font-bold leading-6 tracking-[0.48px] capitalize"
+                >
+                  Layanan Terpercaya
+                </p>
+                <p
+                  class="text-white font-light text-xs tracking-[0.32px] capitalize"
+                >
+                  Pengalaman bertahun-tahun dalam bisnis pulsa H2H
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img
+                src="/public/feature5.png"
+                alt="Dukungan 24/7"
+                class="w-20"
+              />
+              <div class="flex flex-col gap-2">
+                <p
+                  class="text-white font-bold leading-6 tracking-[0.48px] capitalize"
+                >
+                  Support 24/7
+                </p>
+                <p
+                  class="text-white font-light text-xs tracking-[0.32px] capitalize"
+                >
+                  Tim customer service siap membantu kapan saja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end feature section -->
+
+      <!-- produk section -->
+      <section
+        class="relative flex flex-col items-center w-full max-w-7xl mx-auto justify-center"
+      >
+        <h1 class="text-[46px] font-bold text-[#fff] text-center">
+          Produk & Layanan yang Kami Sediakan
+        </h1>
+        <div class="grid grid-cols-4 gap-3 mx-auto mt-12">
+          <div
+            class="flex flex-col px-4 py-6 items-center text-white card-product"
+          >
+            <div
+              class="size-[219px] rounded-full flex items-center justify-center"
+              style="background: rgba(168, 168, 168, 0.32)"
+            >
+              <img src="/public/produk1.png" alt="Produk1" />
+            </div>
+            <p class="mt-7 text-lg text-center font-bold">
+              Pulsa Semua Operator
+            </p>
+            <div
+              class="h-[2px] my-2 w-[154px]"
+              style="background: rgba(168, 168, 168, 0.32)"
+            ></div>
+            <span class="text-base text-center"
+              >Telkomsel, XL, Indosat, Tri, Smartfren, dll.</span
+            >
+            <button
+              class="py-4 px-7 mt-10 rounded-[40px] text-[#343045] text-xs font-bold"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Coba Sekarang
+            </button>
+          </div>
+          <div
+            class="flex flex-col px-4 py-6 items-center text-white card-product"
+          >
+            <div
+              class="size-[219px] rounded-full flex items-center justify-center"
+              style="background: rgba(168, 168, 168, 0.32)"
+            >
+              <img src="/public/produk2.png" alt="Produk1" />
+            </div>
+            <p class="mt-7 text-lg text-center font-bold">Paket Data</p>
+            <div
+              class="h-[2px] my-2 w-[154px]"
+              style="background: rgba(168, 168, 168, 0.32)"
+            ></div>
+            <span class="text-base text-center"
+              >Kuota internet dengan harga terbaik dari berbagai operator.</span
+            >
+            <button
+              class="py-4 px-7 mt-10 rounded-[40px] text-[#343045] text-xs font-bold"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Coba Sekarang
+            </button>
+          </div>
+          <div
+            class="flex flex-col px-4 py-6 items-center text-white card-product"
+          >
+            <div
+              class="size-[219px] rounded-full flex items-center justify-center"
+              style="background: rgba(168, 168, 168, 0.32)"
+            >
+              <img src="/public/produk3.png" alt="Produk1" />
+            </div>
+            <p class="mt-7 text-lg text-center font-bold">PPOB</p>
+            <div
+              class="h-[2px] my-2 w-[154px]"
+              style="background: rgba(168, 168, 168, 0.32)"
+            ></div>
+            <span class="text-base text-center"
+              >Pembayaran listrik, air, BPJS, dan tagihan lainnya.</span
+            >
+            <button
+              class="py-4 px-7 mt-10 rounded-[40px] text-[#343045] text-xs font-bold"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Coba Sekarang
+            </button>
+          </div>
+          <div
+            class="flex flex-col px-4 py-6 items-center text-white card-product"
+          >
+            <div
+              class="size-[219px] rounded-full flex items-center justify-center"
+              style="background: rgba(168, 168, 168, 0.32)"
+            >
+              <img src="/public/produk4.png" alt="Produk1" />
+            </div>
+            <p class="mt-7 text-lg text-center font-bold">Voucher Digital</p>
+            <div
+              class="h-[2px] my-2 w-[154px]"
+              style="background: rgba(168, 168, 168, 0.32)"
+            ></div>
+            <span class="text-base text-center"
+              >Pembayaran listrik, air, BPJS, dan tagihan lainnya.</span
+            >
+            <button
+              class="py-4 px-7 mt-10 rounded-[40px] text-[#343045] text-xs font-bold"
+              style="
+                background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+              "
+            >
+              Coba Sekarang
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- kerjasaman section -->
+      <section class="relative flex items-center w-full mt-20 mx-auto mb-28">
+        <img
+          src="/public/vector2.png"
+          alt="vector"
+          class="absolute bottom-[50px] w-full"
+        />
+        <div class="w-full flex max-w-7xl justify-center mx-auto flex-col">
+          <h1 class="text-[36px] font-bold text-center text-[#fff]">
+            Cara Bekerja sama dengan Kita
+          </h1>
+          <div class="grid grid-cols-4 mt-28 gap-[115px] z-10">
+            <div class="flex flex-col items-center">
+              <div
+                class="bg-[#0D0D0D] bg-opacity-[32%] rounded-full p-2 size-[198px] flex items-center justify-center"
+              >
+                <div
+                  class="size-[159px] rounded-full flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #8176af 0%,
+                      #c0b7e8 100%
+                    );
+                  "
+                >
+                  <p class="font-bold text-[64px] text-[#343045]">01</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mt-4 justify-center">
+                <img src="/public/arrow.png" alt="Arrow" />
+                <p class="text-white font-semibold text-nowrap">
+                  Gabung di Telegram
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="bg-[#0D0D0D] bg-opacity-[32%] rounded-full p-2 size-[198px] flex items-center justify-center"
+              >
+                <div
+                  class="size-[159px] rounded-full flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #8176af 0%,
+                      #c0b7e8 100%
+                    );
+                  "
+                >
+                  <p class="font-bold text-[64px] text-[#343045]">02</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mt-4">
+                <img src="/public/arrow.png" alt="Arrow" />
+                <p class="text-white font-semibold">Pilih Produk</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="bg-[#0D0D0D] bg-opacity-[32%] rounded-full p-2 size-[198px] flex items-center justify-center"
+              >
+                <div
+                  class="size-[159px] rounded-full flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #8176af 0%,
+                      #c0b7e8 100%
+                    );
+                  "
+                >
+                  <p class="font-bold text-[64px] text-[#343045]">03</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mt-4">
+                <img src="/public/arrow.png" alt="Arrow" />
+                <p class="text-white font-semibold">Lakukan Transaksi</p>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <div
+                class="bg-[#0D0D0D] bg-opacity-[32%] rounded-full p-2 size-[198px] flex items-center justify-center"
+              >
+                <div
+                  class="size-[159px] rounded-full flex items-center justify-center"
+                  style="
+                    background: linear-gradient(
+                      90deg,
+                      #8176af 0%,
+                      #c0b7e8 100%
+                    );
+                  "
+                >
+                  <p class="font-bold text-[64px] text-[#343045]">04</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 mt-4">
+                <img src="/public/arrow.png" alt="Arrow" />
+                <p class="text-white font-semibold">Nikmati Layanan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end kerjasaman section -->
+
+      <!-- testimoni  -->
+      <section class="relative flex items-center w-full mt-20 mx-auto mb-28">
+        <img
+          src="/public/elipse1.png"
+          alt="elipse"
+          class="absolute left-0 top-[-500px] z-0"
+        />
+        <img
+          src="/public/elipse2.png"
+          alt="elipse"
+          class="absolute right-0 z-0"
+        />
+        <div
+          style="background-image: url(/public/bg-wuzz.png)"
+          class="w-full py-20 relative z-10"
+        >
+          >
+          <div
+            class="w-full flex items-center max-w-7xl mx-auto justify-between"
+          >
+            <h1
+              class="text-[46px] text-white font-bold max-w-[327px] z-20 relative"
+            >
+              Apa Kata Pelanggan Kami?
+            </h1>
+            <div class="grid grid-cols-2 gap-10">
+              <div
+                class="card-testimonial py-[30px] px-[47px] flex flex-col gap-[30px] relative z-20"
+              >
+                <img src="/public/kutip.png" alt="Kutip" class="w-[42px]" />
+                <p class="text-white text-sm tracking-[0.32px] leading-[180%]">
+                  Super creative and especially highly optimized website,
+                  thanks!
+                </p>
+                <p class="text-white tracking-[0.32px]">Steve Mark</p>
+                <img
+                  src="/public/test1.png"
+                  alt="Steve Mark"
+                  class="w-[48px]"
+                />
+                <p class="text-white text-opacity-50 text-sm">
+                  Founder & Leader
+                </p>
+              </div>
+              <div
+                class="card-testimonial py-[30px] px-[47px] flex flex-col gap-[30px] relative z-20"
+              >
+                <img src="/public/kutip.png" alt="Kutip" class="w-[42px]" />
+                <p class="text-white text-sm tracking-[0.32px] leading-[180%]">
+                  Money makes your life easier. If you're lucky to have it,
+                  you're lucky.
+                </p>
+                <p class="text-white tracking-[0.32px]">Steve Mark</p>
+                <img
+                  src="/public/test2.png"
+                  alt="Steve Mark"
+                  class="w-[48px]"
+                />
+                <p class="text-white text-opacity-50 text-sm">
+                  Founder & Leader
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end testimoni -->
+
+      <!-- unduh wuzz -->
+      <section class="flex flex-col w-full max-w-7xl mx-auto pb-28">
+        <div class="flex content-unduh p-[45px] gap-20">
+          <div class="w-1/4">
+            <img src="/public/wuz.png" alt="Wuzz" />
+          </div>
+          <div class="w-3/4 flex flex-col">
+            <p
+              class="text-[36px] font-extrabold uppercase leading-[48px] text-white"
+            >
+              Mulai Bisnis Pulsa Anda dengan Kami!
+            </p>
+            <p class="text-white mt-4 text-2xl uppercase font-bold">
+              Gabung sekarang di channel Telegram kami dan nikmati layanan
+              terbaik dari distributor terpercaya
+            </p>
+            <div class="flex mt-10 justify-center">
+              <button
+                class="text-white flex justify-center gap-4 w-[187px] bg-button text-xl font-semibold py-[10px] px-[67px]"
+              >
+                Unduh
+                <img src="/public/playstore.png" alt="Playstore" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end unduh wuzz -->
+
+      <footer class="bg-gradient-card flex flex-col py-12">
+        <div
+          class="max-w-7xl mx-auto text-white flex w-full justify-between items-center"
+        >
+          <div class="flex flex-row gap-32">
+            <div>
+              <p class="uppercase text-xl tracking-[2px] font-extrabold">
+                Media Sosial
+              </p>
+              <ul class="flex flex-col mt-5 gap-3">
+                <li class="flex items-center gap-5">
+                  <img src="/public/facebook.png" alt="Facebook" />
+                  <span>Facebook</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img src="/public/ig.png" alt="Facebook" />
+                  <span>Instagram</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img src="/public/tiktok.png" alt="Facebook" />
+                  <span>Tiktok</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="uppercase text-xl tracking-[2px] font-extrabold">
+                Contacts
+              </p>
+              <ul class="flex flex-col mt-5 gap-3">
+                <li class="flex items-center gap-5">
+                  <img src="/public/contact.png" alt="Contact" />
+                  <span>0800-1234-5678</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img src="/public/chat.png" alt="Gmail" />
+                  <span>pulsalapak@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="/public/wuz.png" alt="Pulsalapak" class="size-[160px]" />
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

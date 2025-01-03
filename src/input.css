@@ -71,3 +71,22 @@ body {
     background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
     backdrop-filter: blur(25px);
 }
+
+.text-gradient-wuzz {
+    background: linear-gradient(92deg, #C0B7E8 -1.02%, #FFFB00 36.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cover-hero-wuzz {
+    border-radius: 100px 100px 100px 240px;
+    background: rgba(0, 0, 0, 0.13);
+}
+
+.card-product {
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #551B5B 0%, #490909 100%);
+    width: 310px;
+    height: 511px;
+}
