@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wuzz Barber</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      .card-hair {
+        border-radius: 27px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        background: linear-gradient(
+          109deg,
+          rgba(201, 201, 201, 0.24) 1.57%,
+          rgba(196, 196, 196, 0.03) 100%
+        );
+        backdrop-filter: blur(25px);
+        width: 253px;
+        height: 264px;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background: linear-gradient(
+          180deg,
+          #5a5152 0%,
+          #514546 43.24%,
+          #181515 61.39%,
+          #111 100%
+        );
+      }
+    </style>
+    <main class="flex w-full flex-col min-h-screen">
+      <!-- navbar -->
+      <nav class="flex flex-row py-3 w-full">
+        <div
+          class="flex w-full max-w-7xl mx-auto items-center justify-between flex-row"
+        >
+          <div class="h-[85px] w-[300px]">
+            <img src="/public/wuzz.png" alt="Wuzz" />
+          </div>
+          <ul class="flex text-white gap-10 flex-row text-lg items-center">
+            <li class="cursor-pointer hover:text-gray-400">Home</li>
+            <li class="cursor-pointer hover:text-gray-400">About</li>
+            <li class="cursor-pointer hover:text-gray-400">Services</li>
+            <li class="cursor-pointer hover:text-gray-400">Contacts</li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end navbar -->
+
+      <!-- hero section -->
+      <section class="relative flex items-center w-full mx-auto my-10">
+        <img
+          src="/public/elipse4.png"
+          alt="Eclipse"
+          class="absolute left-0 -z-10"
+        />
+        <div class="w-full flex max-w-7xl mx-auto relative items-center">
+          <div class="w-1/2 flex flex-col z-10 relative">
+            <p class="text-white text-[52px] font-semibold leading-[62px]">
+              Wuzz Barber: Tempat Gaya Rambut Kece untuk Tampil Percaya Diri!
+            </p>
+            <span class="text-[#fff] text-xl mt-7 font-bold leading-[40.44px]"
+              >Nikmati potongan rambut trendi, suasana nyaman, dan pelayanan
+              ramah hanya di Wuzz Barber.
+            </span>
+            <button
+              style="box-shadow: 11px 4px 3.7px 6px rgba(255, 99, 71, 0.25)"
+              class="p-3 mt-10 rounded-[9px] border-2 border-[s#FFA500] bg-[#FFA500] w-[279px] text-xl text-[#fff] font-semibold"
+            >
+              Pesan Sekarang
+            </button>
+          </div>
+          <div class="w-1/2 flex justify-end z-10 relative">
+            <div class="">
+              <img
+                src="/public/barber.png"
+                alt="Wuzz"
+                class="h-[567px] w-[458px]"
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          src="/public/rectangle3.png"
+          alt="rectangle"
+          class="absolute bg-cover w-full top-5"
+        />
+      </section>
+      <!-- end hero section -->
+
+      <!-- feature section -->
+      <section
+        class="relative bg-cover flex flex-col items-center w-full pb-28 mx-auto justify-center"
+      >
+        <div class="grid grid-cols-4 max-w-7xl gap-[18px] mt-[38px]">
+          <div
+            class="relativep py-10 px-6 flex text-[#fff] text-center flex-col items-center rounded-[10px]"
+          >
+            <img
+              src="/public/barber1.png"
+              alt="Potongan Trending"
+              class="size-[165px]"
+            />
+            <p class="text-3xl font-semibold leading-8 mt-3 mb-5">
+              Potongan Trending
+            </p>
+            <span class="leading-7"
+              >Ahli dalam potongan modern dan klasik untuk semua usia.</span
+            >
+          </div>
+          <div
+            class="relativep py-10 px-6 flex text-[#fff] text-center flex-col items-center rounded-[10px]"
+          >
+            <img
+              class="size-[165px]"
+              src="/public/barber2.png"
+              alt="Pelayanan Ramah"
+            />
+            <p class="text-3xl font-semibold leading-8 mt-3 mb-5">
+              Pelayanan <br />
+              Ramah
+            </p>
+            <span class="leading-7"
+              >Dibantu oleh barber profesional yang ramah dan
+              berpengalaman</span
+            >
+          </div>
+          <div
+            class="relative py-10 px-6 flex text-[#fff] text-center flex-col items-center rounded-[10px]"
+          >
+            <img
+              class="size-[165px]"
+              src="/public/barber3.png"
+              alt="Suasana Nyaman"
+            />
+            <p class="text-3xl font-semibold leading-8 mt-3 mb-5">
+              Suasana <br />
+              Nyaman
+            </p>
+            <span class="leading-7">Tempat yang nyaman dan ramah</span>
+          </div>
+          <div
+            class="relativep py-10 px-6 flex text-[#fff] text-center flex-col items-center rounded-[10px]"
+          >
+            <img
+              src="/public/barber4.png"
+              alt="Harga Terjangkau"
+              class="size-[165px]"
+            />
+            <p class="text-3xl font-semibold leading-8 mt-3 mb-5">
+              Harga <br />
+              Terjangkau
+            </p>
+            <span class="leading-7"
+              >Potongan premium dengan harga yang bersahabat</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- end feature section -->
+
+      <!-- produk section -->
+      <section class="relative flex flex-col items-center pb-28 w-full mx-auto">
+        <h1
+          class="text-5xl font-medium text-[#fff] text-center leading-[70px] z-10 relative"
+        >
+          Layanan Barber Profesional Kami
+        </h1>
+        <div class="grid max-w-7xl grid-cols-3 mt-20 z-10 relative">
+          <img
+            src="/public/elipse4.png"
+            alt="Eclipse"
+            class="absolute left-[-200px] size-[800px] bottom-[-500px] -z-10"
+          />
+          <div
+            class="flex text-[#fff] border-b p-[0_60px_60px_60px] border-r border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar1.png" alt="Paket Data" />
+            <p class="text-xl font-bold leading-7">Paket Data</p>
+            <span class="leading-7 text-lg mt-5"
+              >Harian, Mingguan dan Bulanan</span
+            >
+          </div>
+          <div
+            class="flex text-[#fff] border-b p-[0_60px_60px_60px] border-r border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar2.png" alt="Pulsa Semua Operator" />
+            <p class="text-xl font-bold leading-7">Pulsa Semua Operator</p>
+            <span class="leading-7 text-lg mt-5"
+              >Tersedia dari semua operator</span
+            >
+          </div>
+          <div
+            class="flex text-[#fff] border-b p-[0_60px_60px_60px] border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar3.png" alt="Paket Data Grosir" />
+            <p class="text-xl font-bold leading-7">
+              Shaving dan Styling Janggut
+            </p>
+            <span class="leading-7 text-lg text-center mt-5"
+              >Perawatan janggut dan kumis untuk tampil rapi</span
+            >
+          </div>
+          <div
+            class="flex text-[#fff] p-[40px_60px_60px_60px] border-r border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar4.png" alt="Paket Data" />
+            <p class="text-xl font-bold leading-7">Creambath dan Hair Spa</p>
+            <span class="leading-7 text-lg text-center mt-5"
+              >Manjakan rambut dengan perawatan terbaik.</span
+            >
+          </div>
+          <div
+            class="flex text-[#fff] p-[40px_60px_60px_60px] border-r border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar5.png" alt="Pulsa Semua Operator" />
+            <p class="text-xl font-bold leading-7">Hair Coloring</p>
+            <span class="leading-7 text-center text-lg mt-5"
+              >Ekspresikan dirimu dengan pilihan warna rambut yang trendi dan
+              sesuai gaya Anda</span
+            >
+          </div>
+          <div
+            class="flex text-[#fff] p-[40px_60px_60px_60px] border-[#fff] flex-col items-center justify-center"
+          >
+            <img src="/public/bar6.png" alt="Paket Data Grosir" />
+            <p class="text-xl font-bold leading-7">
+              Shaving dan Styling Janggut
+            </p>
+            <span class="leading-7 text-lg text-center mt-5"
+              >Perawatan janggut dan kumis untuk tampil rapi</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- end produk section -->
+
+      <!-- section rambut -->
+      <section
+        class="flex py-12 bg-cover flex-col items-center w-full"
+        style="background-image: url(/public/rectangle4.png)"
+      >
+        <h1
+          class="text-5xl font-medium text-[#fff] text-center leading-[70px] z-10 relative"
+        >
+          Gaya Rambut Pilihan Kami
+        </h1>
+        <div class="relative grid grid-cols-3 max-w-7xl gap-[38px] mt-8">
+          <img
+            src="/public/elipse4.png"
+            alt="Eclipse"
+            class="absolute right-[-400px] size-[800px] bottom-[-500px] -z-10"
+          />
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair1.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Pria</p>
+          </div>
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair2.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Pria</p>
+          </div>
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair3.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Pria</p>
+          </div>
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair4.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Wanita</p>
+          </div>
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair5.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Wanita</p>
+          </div>
+          <div class="card-hair flex flex-col items-center justify-center">
+            <img
+              class="size-[160px] object-contain"
+              src="/public/hair6.png"
+              alt=""
+            />
+            <p class="text-white text-opacity-50 mt-4">Wanita</p>
+          </div>
+        </div>
+        <button
+          class="py-2 mt-[52px] px-8 rounded-[27px]"
+          style="
+            background: radial-gradient(
+              50% 50% at 50% 50%,
+              #756f6f 0%,
+              #ffa500 100%
+            );
+          "
+        >
+          Lihat Selengkapnya
+        </button>
+      </section>
+      <!-- end section rambut -->
+
+      <!-- penawaran -->
+      <section
+        class="flex w-full max-w-7xl mx-auto pb-28 items-center relative"
+      >
+        <img
+          src="/public/elipse5.png"
+          alt="Eclipse"
+          class="absolute left-[-200px] top-0 size-[800px] -z-10"
+        />
+        <div class="w-2/3">
+          <div class="flex items-start gap-3 max-w-[813px]">
+            <img src="/public/flash.png" alt="Flash Icon" />
+            <div>
+              <p
+                class="text-[40px] text-white uppercase font-extrabold tracking-[-0.8px]"
+              >
+                Promo Spesial Bulan Ini!
+              </p>
+              <ul class="text-white list-disc ml-4 space-y-4 mt-5 text-[24px]">
+                <li>Diskon 20% untuk Potongan Pertama</li>
+                <li>Gratis Hair Spa untuk Transaksi di Atas Rp100.000.</li>
+                <li>Paket Hemat Potong Rambut dan Shaving.</li>
+              </ul>
+              <button
+                class="text-white bg-button text-xl font-semibold mt-6 py-[10px] px-[67px] uppercase"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3">
+          <div class="flex justify-end">
+            <img src="/public/kadoin.png" alt="Kado" class="z-10" />
+          </div>
+        </div>
+      </section>
+      <!-- end penawaran -->
+
+      <!-- testimonial section -->
+      <section
+        class="relative flex flex-col items-center w-full max-w-7xl mb-28 mx-auto justify-center"
+      >
+        <div class="flex items-center gap-16">
+          <img src="/public/kutip-r.png" alt="" />
+          <h1 class="text-5xl font-medium text-[#fff] text-center">
+            Testimoni
+          </h1>
+          <img src="/public/kutip-l.png" alt="" />
+        </div>
+        <div class="grid grid-cols-3 mt-24 gap-7 z-10">
+          <div
+            class="card-testimonial py-[30px] px-[47px] flex flex-col gap-[30px] relative z-20"
+          >
+            <img src="/public/kutip.png" alt="Kutip" class="w-[42px]" />
+            <p class="text-white text-sm tracking-[0.32px] leading-[180%]">
+              Super creative and especially highly optimized website, thanks!
+            </p>
+            <p class="text-white tracking-[0.32px]">Steve Mark</p>
+            <img src="/public/test1.png" alt="Steve Mark" class="w-[48px]" />
+            <p class="text-white text-opacity-50 text-sm">Founder & Leader</p>
+          </div>
+          <div
+            class="card-testimonial py-[30px] px-[47px] flex flex-col gap-[30px] relative z-20"
+          >
+            <img src="/public/kutip.png" alt="Kutip" class="w-[42px]" />
+            <p class="text-white text-sm tracking-[0.32px] leading-[180%]">
+              Money makes your life easier. If you're lucky to have it, you're
+              lucky.
+            </p>
+            <p class="text-white tracking-[0.32px]">Steve Mark</p>
+            <img src="/public/test1.png" alt="Steve Mark" class="w-[48px]" />
+            <p class="text-white text-opacity-50 text-sm">Founder & Leader</p>
+          </div>
+          <div
+            class="card-testimonial py-[30px] px-[47px] flex flex-col gap-[30px] relative z-20"
+          >
+            <img src="/public/kutip.png" alt="Kutip" class="w-[42px]" />
+            <p class="text-white text-sm tracking-[0.32px] leading-[180%]">
+              Super creative and especially highly optimized website, thanks!
+            </p>
+            <p class="text-white tracking-[0.32px]">Steve Mark</p>
+            <img src="/public/test1.png" alt="Steve Mark" class="w-[48px]" />
+            <p class="text-white text-opacity-50 text-sm">Founder & Leader</p>
+          </div>
+        </div>
+      </section>
+      <!-- end testimonial section -->
+
+      <!-- unduh wuzz -->
+      <section class="flex flex-col w-full max-w-7xl mx-auto mt-24 pb-28">
+        <div class="flex content-unduh p-[45px] gap-20">
+          <div class="w-1/4">
+            <img src="/public/wuz.png" alt="Wuzz" />
+          </div>
+          <div class="w-3/4 flex flex-col">
+            <p
+              class="text-[36px] font-extrabold uppercase leading-[48px] text-white"
+            >
+              Mulai Bisnis Pulsa Anda dengan Wuzz!
+            </p>
+            <p class="text-white mt-4 text-2xl uppercase font-bold">
+              Jangan sampai ketinggalan! Dapatkan voucher data dan kartu perdana
+              dengan harga grosir terbaik.
+            </p>
+            <div class="flex mt-10 justify-center">
+              <button
+                class="text-white flex justify-center gap-4 w-[187px] bg-button text-xl font-semibold py-[10px] px-[67px]"
+              >
+                Unduh
+                <img src="/public/playstore.png" alt="Playstore" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end unduh wuzz -->
+
+      <!-- footer -->
+      <footer class="bg-[#000] w-full">
+        <div
+          class="max-w-7xl py-12 text-white justify-between flex mx-auto w-full"
+        >
+          <p>© 2077 Untitled UI. All rights reserved.</p>
+          <div class="flex flex-row gap-6 items-center">
+            <a href="#"><img src="/public/tw.svg" alt="" /></a>
+            <a href="#"><img src="/public/li.svg" alt="" /></a>
+            <a href="#"><img src="/public/fb.svg" alt="" /></a>
+            <a href="#"><img src="/public/git.svg" alt="" /></a>
+            <a href="#"><img src="/public/vis.svg" alt="" /></a>
+            <a href="#"><img src="/public/bola.svg" alt="" /></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
