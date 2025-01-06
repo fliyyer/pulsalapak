@@ -108,6 +108,6 @@ body {
 .card-product {
   border-radius: 40px;
   background: radial-gradient(50% 50% at 50% 50%, #551b5b 0%, #490909 100%);
-  width: 310px;
-  height: 511px;
+  /* width: 310px;
+  height: 511px; */
 }
