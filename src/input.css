@@ -1,92 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Alexandria', sans-serif;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  font-family: "Alexandria", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .bg-gradient-text {
-    background: linear-gradient(180deg, #F24E1E 0%, #A559F7 96.35%, #A259FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  background: linear-gradient(180deg, #f24e1e 0%, #a559f7 96.35%, #a259ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .card-hero-info {
-    padding: 20px;
-    border-radius: 27px;
-    border: 2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
-    max-width: 383px;
-    min-width: 350px;
-    z-index: 10;
-  }
+.card-hero-info {
+  border-radius: 27px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
+  z-index: 10;
+}
 
-  .card-pl-info {
-    padding: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
-    z-index: 10;
-  }
+.card-pl-info {
+  padding: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
+  z-index: 10;
+}
 
 .content-feature {
-    padding: 20px;
-    border-radius: 27px;
-    border: 0.2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
+  padding: 20px;
+  border-radius: 27px;
+  border: 0.2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
 }
 
 .bg-button {
-    border-radius: 27px;
-    background: linear-gradient(109deg, #D2537A 1.57%, #ED4F2D 100%);
-    backdrop-filter: blur(25px);
+  border-radius: 27px;
+  background: linear-gradient(109deg, #d2537a 1.57%, #ed4f2d 100%);
+  backdrop-filter: blur(25px);
 }
 
 .card-testimonial {
-    width: 384px;
-    border-radius: 27px;
-    border: 2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
+  /* width: 384px; */
+  border-radius: 27px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
 }
 
 .content-unduh {
-    border-radius: 27px;
-    border: 2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
+  border-radius: 27px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
 }
 
 .bg-gradient-card {
-    border-radius: 27px 27px 0px 0px;
-    border-top: 2px solid rgba(255, 255, 255, 0.80);
-    background: linear-gradient(109deg, rgba(201, 201, 201, 0.24) 1.57%, rgba(196, 196, 196, 0.03) 100%);
-    backdrop-filter: blur(25px);
+  border-radius: 27px 27px 0px 0px;
+  border-top: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    109deg,
+    rgba(201, 201, 201, 0.24) 1.57%,
+    rgba(196, 196, 196, 0.03) 100%
+  );
+  backdrop-filter: blur(25px);
 }
 
 .text-gradient-wuzz {
-    background: linear-gradient(92deg, #C0B7E8 -1.02%, #FFFB00 36.25%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(92deg, #c0b7e8 -1.02%, #fffb00 36.25%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cover-hero-wuzz {
-    border-radius: 100px 100px 100px 240px;
-    background: rgba(0, 0, 0, 0.13);
+  border-radius: 100px 100px 100px 240px;
+  background: rgba(0, 0, 0, 0.13);
 }
 
 .card-product {
-    border-radius: 40px;
-    background: radial-gradient(50% 50% at 50% 50%, #551B5B 0%, #490909 100%);
-    width: 310px;
-    height: 511px;
+  border-radius: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #551b5b 0%, #490909 100%);
+  width: 310px;
+  height: 511px;
 }
