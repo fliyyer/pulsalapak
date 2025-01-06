@@ -19,21 +19,75 @@
         font-family: "Inter", sans-serif;
         background-color: #12132a;
       }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #c23893;
+        border-radius: 2px;
+      }
     </style>
+
     <!-- navbar -->
-    <nav class="flex flex-row py-3 w-full">
+    <nav class="w-full z-10">
       <div
-        class="flex w-full max-w-7xl mx-auto items-center justify-between flex-row"
+        class="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex lg:px-0"
       >
-        <div class="h-[85px] w-[300px]">
-          <img src="/public/wuzz.png" alt="Wuzz" />
+        <div>
+          <div class="flex items-center justify-between py-3 md:block">
+            <a href="#">
+              <div class="h-[50px] w-[150px] lg:h-[95px] lg:w-[320px]">
+                <img src="/public/wuzz.png" alt="Wuzz" />
+              </div>
+            </a>
+            <div class="md:hidden">
+              <button
+                class="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
+                onclick="toggleNavbar()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="menu-icon"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <ul class="flex text-white gap-10 flex-row text-lg items-center">
-          <li class="cursor-pointer hover:text-gray-400">Home</li>
-          <li class="cursor-pointer hover:text-gray-400">About</li>
-          <li class="cursor-pointer hover:text-gray-400">Services</li>
-          <li class="cursor-pointer hover:text-gray-400">Contacts</li>
-        </ul>
+        <div>
+          <div
+            id="navbar"
+            class="hidden flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0"
+          >
+            <ul
+              class="items-center text-center text-lg justify-center space-y-3 md:flex md:space-x-5 lg:space-x-10 md:space-y-0"
+            >
+              <li class="text-white hover:text-gray-400">
+                <a href="#">Home</a>
+              </li>
+              <li class="text-white hover:text-gray-400">
+                <a href="#">About</a>
+              </li>
+              <li class="text-white hover:text-gray-400">
+                <a href="#">Services</a>
+              </li>
+              <li class="text-white hover:text-gray-400">
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- end navbar -->
@@ -409,5 +463,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleNavbar() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
