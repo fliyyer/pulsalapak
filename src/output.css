@@ -748,6 +748,11 @@ video {
   margin-bottom: 5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -1735,6 +1740,14 @@ video {
   line-height: 70px;
 }
 
+.leading-9{
+  line-height: 2.25rem;
+}
+
+.leading-\[200px\]{
+  line-height: 200px;
+}
+
 .tracking-\[-0\.8px\]{
   letter-spacing: -0.8px;
 }
@@ -2225,6 +2238,22 @@ body {
     line-height: 2.25rem;
   }
 
+  .md\:text-\[26px\]{
+    font-size: 26px;
+  }
+
+  .md\:text-\[34px\]{
+    font-size: 34px;
+  }
+
+  .md\:text-\[32px\]{
+    font-size: 32px;
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
+  }
+
   .md\:font-extrabold{
     font-weight: 800;
   }
@@ -2459,6 +2488,10 @@ body {
 
   .lg\:text-\[64px\]{
     font-size: 64px;
+  }
+
+  .lg\:text-\[48px\]{
+    font-size: 48px;
   }
 
   .lg\:font-extrabold{
