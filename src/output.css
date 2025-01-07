@@ -972,6 +972,10 @@ video {
   height: 8rem;
 }
 
+.h-\[124px\]{
+  height: 124px;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1576,6 +1580,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-28{
   padding-bottom: 7rem;
 }
@@ -2110,12 +2124,20 @@ body {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:text-wrap{
+    text-wrap: wrap;
+  }
+
   .md\:text-nowrap{
     text-wrap: nowrap;
   }
 
   .md\:p-\[45px\]{
     padding: 45px;
+  }
+
+  .md\:p-0{
+    padding: 0px;
   }
 
   .md\:px-14{
@@ -2151,6 +2173,16 @@ body {
   .md\:py-\[30px\]{
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:pb-0{
@@ -2201,6 +2233,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:font-extrabold{
     font-weight: 800;
   }
@@ -2219,6 +2256,10 @@ body {
 
   .md\:leading-\[60px\]{
     line-height: 60px;
+  }
+
+  .md\:leading-7{
+    line-height: 1.75rem;
   }
 
   .md\:tracking-\[-0\.8px\]{
@@ -2417,6 +2458,10 @@ body {
     padding: 0 60px 60px 60px;
   }
 
+  .lg\:p-0{
+    padding: 0px;
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -2552,6 +2597,10 @@ body {
 
   .lg\:leading-\[180\%\]{
     line-height: 180%;
+  }
+
+  .lg\:leading-\[62px\]{
+    line-height: 62px;
   }
 
   .lg\:tracking-\[0\.32px\]{
